@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.10" type="plugin" group="content" method="upgrade">
+	<name>Content - JExtBOX Page Navigation Plus</name>
+	<author>Galaa</author>
+	<creationDate>Aug 2021</creationDate>
+	<copyright>Copyright (C) 2021-2023 Galaa. All rights reserved.</copyright>
+	<license>GNU/GPL License - https://www.gnu.org/licenses/gpl.html</license>
+	<authorUrl>www.jextbox.com</authorUrl>
+	<version>2.1.0</version>
+	<description><![CDATA[<p>This plugin improves Joomla's core <em>Next & Previous</em> functionality for linking to the other articles.</p><ul><li>Changes direction between next and previous articles.</li><li>Shows the parent page (home or category) instead of a missing next/previous article.</li><li>Truncates long titles.</li></ul><p>Do not forget to disable &quot;Page Navigation&quot; the core plugin.</p>]]></description>
+	<files>
+		<filename plugin="jextboxpagenavigationplus">jextboxpagenavigationplus.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_content_jextboxpagenavigationplus.ini</language>
+		<language tag="en-GB">en-GB.plg_content_jextboxpagenavigationplus.sys.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" priority="1" name="JExtBOX Page Navigation Plus - Updates">http://jextbox.com/update/jextboxpagenavigationplus.xml</server>
+	</updateservers>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field type="note" label="PLG_JEXTBOXPAGENAVIGATIONPLUS_NOTE_COREOPTIONS" />
+
+				<field
+					name="position"
+					type="list"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_POSITION"
+					default="1"
+					filter="integer"
+					validate="options"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_POSITION_OPTION_BELOW</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_POSITION_OPTION_ABOVE</option>
+				</field>
+
+				<field
+					name="relative"
+					type="list"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_RELATIVETO"
+					default="1"
+					filter="integer"
+					validate="options"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_RELATIVETO_OPTION_ARTICLE</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_RELATIVETO_OPTION_TEXT</option>
+				</field>
+
+				<field
+					name="display"
+					type="list"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DISPLAY"
+					default="0"
+					filter="integer"
+					validate="options"
+				>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DISPLAY_OPTION_NEXTPREV</option>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DISPLAY_OPTION_TITLE</option>
+				</field>
+
+				<field type="note" label="PLG_JEXTBOXPAGENAVIGATIONPLUS_NOTE_ADDITIONALOPTIONS" />
+
+				<field
+					name="direction_between_prev_next"
+					type="list"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DIRECTION"
+					default="1"
+					filter="uint"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DIRECTION_OPTION_PREVIOUSNEXT</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DIRECTION_OPTION_NEXTPREVIOUS</option>
+				</field>
+
+				<field
+					name="show_parent"
+					type="radio"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_SHOWPARENTPAGE"
+					default="1"
+					filter="uint"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_SHOWPARENTPAGE_OPTION_YES</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_SHOWPARENTPAGE_OPTION_NO</option>
+				</field>
+
+				<field
+					name="parent_type"
+					type="list"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTPAGE"
+					default="1"
+					filter="uint"
+					showon="show_parent:1"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTPAGE_OPTION_HOME</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTPAGE_OPTION_CATEGORY</option>
+				</field>
+
+				<field
+					name="truncate_long_titles"
+					type="radio"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_TRUNCATELONGTITLES"
+					default="1"
+					filter="uint"
+					class="btn-group btn-group-yesno"
+					showon="display:1"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_TRUNCATELONGTITLES_OPTION_YES</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_TRUNCATELONGTITLES_OPTION_NO</option>
+				</field>
+
+				<field
+					name="title_characters"
+					type="number"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_LENGHTOFTITLES"
+					default="30"
+					filter="uint"
+					showon="display:1[AND]truncate_long_titles:1"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
