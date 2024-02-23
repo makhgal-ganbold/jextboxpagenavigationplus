@@ -2,7 +2,7 @@
 /**
  * @package    "JExtBOX Page Navigation Plus" plugin for Joomla!
  * @reference  plg_content_pagenavigation - the core plugin of Joomla CMS
- * @copyright  Copyright (c) 2021-2023 Galaa
+ * @copyright  Copyright (c) 2021-2024 Galaa
  * @author     Galaa
  * @link       www.jextbox.com
  * @license    GNU/GPL License - https://www.gnu.org/licenses/gpl.html

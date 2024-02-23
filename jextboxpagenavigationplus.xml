@@ -6,8 +6,8 @@
 	<copyright>Copyright (C) 2021-2023 Galaa. All rights reserved.</copyright>
 	<license>GNU/GPL License - https://www.gnu.org/licenses/gpl.html</license>
 	<authorUrl>www.jextbox.com</authorUrl>
-	<version>2.1.0</version>
-	<description><![CDATA[<p>This plugin improves Joomla's core <em>Next & Previous</em> functionality for linking to the other articles.</p><ul><li>Changes direction between next and previous articles.</li><li>Shows the parent page (home or category) instead of a missing next/previous article.</li><li>Truncates long titles.</li></ul><p>Do not forget to disable &quot;Page Navigation&quot; the core plugin.</p>]]></description>
+	<version>2.2.0</version>
+	<description><![CDATA[<p>This plugin improves Joomla's core <em>Next & Previous</em> functionality for linking to the other articles.</p><ul><li>Changes direction between next and previous articles.</li><li>Shows the parent page (home or category) instead of a missing next/previous article.</li><li>Truncates long titles.</li></ul><p>Disable the &quot;Page Navigation&quot; core plugin to use it.</p>]]></description>
 	<files>
 		<filename plugin="jextboxpagenavigationplus">jextboxpagenavigationplus.php</filename>
 		<folder>tmpl</folder>
