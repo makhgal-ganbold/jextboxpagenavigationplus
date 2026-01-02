@@ -10,4 +10,4 @@ It includes all features of the core plugin and provides the following functiona
 
 The "Page Navigation" core plugin must be disabled.
 
-Copyright (C) 2021-2023 [Galaa](https://www.galaa.net/). All rights reserved.
+Copyright (C) 2021-2026 [Makhgal Ganbold](https://www.galaa.net/). All rights reserved.

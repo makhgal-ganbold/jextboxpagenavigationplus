@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.10" type="plugin" group="content" method="upgrade">
+<extension type="plugin" group="content" method="upgrade">
 	<name>Content - JExtBOX Page Navigation Plus</name>
-	<author>Galaa</author>
+	<author>Makhgal Ganbold</author>
 	<creationDate>Aug 2021</creationDate>
-	<copyright>Copyright (C) 2021-2023 Galaa. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2021-2026 Makhgal Ganbold. All rights reserved.</copyright>
 	<license>GNU/GPL License - https://www.gnu.org/licenses/gpl.html</license>
 	<authorUrl>www.jextbox.com</authorUrl>
-	<version>2.2.0</version>
+	<version>3.0.0</version>
 	<description><![CDATA[<p>This plugin improves Joomla's core <em>Next & Previous</em> functionality for linking to the other articles.</p><ul><li>Changes direction between next and previous articles.</li><li>Shows the parent page (home or category) instead of a missing next/previous article.</li><li>Truncates long titles.</li></ul><p>Disable the &quot;Page Navigation&quot; core plugin to use it.</p>]]></description>
+	<namespace path="src">Joomla\Plugin\Content\JExtBOXPageNavigationPlus</namespace>
 	<files>
-		<filename plugin="jextboxpagenavigationplus">jextboxpagenavigationplus.php</filename>
+		<folder plugin="jextboxpagenavigationplus">services</folder>
+		<folder>src</folder>
 		<folder>tmpl</folder>
 	</files>
-	<languages folder="language">
-		<language tag="en-GB">en-GB.plg_content_jextboxpagenavigationplus.ini</language>
-		<language tag="en-GB">en-GB.plg_content_jextboxpagenavigationplus.sys.ini</language>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_jextboxpagenavigationplus.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_jextboxpagenavigationplus.sys.ini</language>
 	</languages>
 	<updateservers>
 		<server type="extension" priority="1" name="JExtBOX Page Navigation Plus - Updates">http://jextbox.com/update/jextboxpagenavigationplus.xml</server>
