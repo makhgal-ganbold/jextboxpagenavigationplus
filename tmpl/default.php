@@ -20,8 +20,11 @@ $lang = $this->getLanguage();
 
 <nav class="pagenavigation">
 	<span class="pagination ms-0">
-		<?php if ($row->prev) : ?>
-			<?php $direction = $lang->isRtl() ? 'right' : 'left'; ?>
+		<?php if ($row->prev) :
+			if (!empty($row->prev->direction))
+				$direction = $row->prev->direction;
+			else
+				$direction = $lang->isRtl() ? 'right' : 'left'; ?>
 			<a class="btn btn-sm btn-secondary previous" href="<?php echo Route::_($row->prev->link); ?>" rel="prev">
 			<span class="visually-hidden">
 				<?php echo $row->prev->title; ?>
@@ -29,8 +32,11 @@ $lang = $this->getLanguage();
 			<?php echo '<span class="icon-chevron-' . $direction . '" aria-hidden="true"></span> <span aria-hidden="true">' . $row->prev->label . '</span>'; ?>
 			</a>
 		<?php endif; ?>
-		<?php if ($row->next) : ?>
-			<?php $direction = $lang->isRtl() ? 'left' : 'right'; ?>
+		<?php if ($row->next) :
+			if (!empty($row->next->direction))
+				$direction = $row->next->direction;
+			else
+				$direction = $lang->isRtl() ? 'left' : 'right'; ?>
 			<a class="btn btn-sm btn-secondary next" href="<?php echo Route::_($row->next->link); ?>" rel="next">
 			<span class="visually-hidden">
 				<?php echo $row->next->title; ?>

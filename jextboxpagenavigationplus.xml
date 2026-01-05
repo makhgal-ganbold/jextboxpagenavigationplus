@@ -15,8 +15,8 @@
 		<folder>tmpl</folder>
 	</files>
 	<languages>
-		<language tag="en-GB">language/en-GB/en-GB.plg_content_jextboxpagenavigationplus.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.plg_content_jextboxpagenavigationplus.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_content_jextboxpagenavigationplus.ini</language>
+		<language tag="en-GB">language/en-GB/plg_content_jextboxpagenavigationplus.sys.ini</language>
 	</languages>
 	<updateservers>
 		<server type="extension" priority="1" name="JExtBOX Page Navigation Plus - Updates">http://jextbox.com/update/jextboxpagenavigationplus.xml</server>
