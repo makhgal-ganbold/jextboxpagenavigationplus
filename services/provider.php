@@ -17,7 +17,7 @@ use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\Database\DatabaseInterface;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
-use Joomla\Plugin\Content\JExtBOXPageNavigationPlus\Extension\JExtBOXPageNavigationPlus;
+use JExtBOX\Plugin\Content\JExtBOXPageNavigationPlus\Extension\JExtBOXPageNavigationPlus;
 
 return new class () implements ServiceProviderInterface {
 

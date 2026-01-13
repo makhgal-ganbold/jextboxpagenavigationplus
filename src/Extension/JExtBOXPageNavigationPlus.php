@@ -9,7 +9,7 @@
  * @license    GNU/GPL License - https://www.gnu.org/licenses/gpl.html
  */
 
-namespace Joomla\Plugin\Content\JExtBOXPageNavigationPlus\Extension;
+namespace JExtBOX\Plugin\Content\JExtBOXPageNavigationPlus\Extension;
 
 use stdClass;
 use Joomla\CMS\Access\Access;

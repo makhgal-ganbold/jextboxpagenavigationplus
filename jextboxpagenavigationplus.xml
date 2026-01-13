@@ -8,7 +8,7 @@
 	<authorUrl>www.jextbox.com</authorUrl>
 	<version>3.0.0</version>
 	<description><![CDATA[<p>This plugin improves Joomla's core <em>Next & Previous</em> functionality for linking to the other articles.</p><ul><li>Changes direction between next and previous articles.</li><li>Shows the parent page (home or category) instead of a missing next/previous article.</li><li>Truncates long titles.</li></ul><p>Disable the &quot;Page Navigation&quot; core plugin to use it.</p>]]></description>
-	<namespace path="src">Joomla\Plugin\Content\JExtBOXPageNavigationPlus</namespace>
+	<namespace path="src">JExtBOX\Plugin\Content\JExtBOXPageNavigationPlus</namespace>
 	<files>
 		<folder plugin="jextboxpagenavigationplus">services</folder>
 		<folder>src</folder>
@@ -16,7 +16,6 @@
 	</files>
 	<languages>
 		<language tag="en-GB">language/en-GB/plg_content_jextboxpagenavigationplus.ini</language>
-		<language tag="en-GB">language/en-GB/plg_content_jextboxpagenavigationplus.sys.ini</language>
 	</languages>
 	<updateservers>
 		<server type="extension" priority="1" name="JExtBOX Page Navigation Plus - Updates">http://jextbox.com/update/jextboxpagenavigationplus.xml</server>
